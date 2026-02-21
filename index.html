@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Camera Test</title>
+</head>
+<body>
+
+<h2>Kamera test</h2>
+
+<script>
+navigator.mediaDevices.getUserMedia({ video: true })
+.then(stream => {
+  alert("Kamera ruxsati berildi");
+})
+.catch(error => {
+  alert("Ruxsat berilmadi");
+});
+</script>
+
+</body>
+</html>
